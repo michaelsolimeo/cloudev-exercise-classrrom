@@ -1,0 +1,6 @@
+@cloudev_exercise_classrrom_HostAddress = http://localhost:5237
+
+GET {{cloudev_exercise_classrrom_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
