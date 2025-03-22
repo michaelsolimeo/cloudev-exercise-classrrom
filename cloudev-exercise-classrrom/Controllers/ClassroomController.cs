@@ -100,7 +100,7 @@ namespace cloudev_exercise_classrrom.Controllers
             {
                 _ctx.Classrooms.Add(_mapper.MapDTOToEntity(dto));
                 _ctx.SaveChanges();
-                return Ok(dto);
+                return Ok(_ctx.Classrooms.SingleOrDefault(s => s.RoomName.Equals(dto.RoomName)));
             }
             catch (Exception ex)
             {

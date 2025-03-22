@@ -64,7 +64,7 @@ namespace cloudev_exercise_classrrom.Controllers
                 Student studentToAdd = _mapper.MapDTOtoEntity(dto);
                 _ctx.Students.Add(studentToAdd);
                 _ctx.SaveChanges();
-                return Created("", dto);
+                return Created("", studentToAdd);
             }
             catch (Exception ex)
             {
