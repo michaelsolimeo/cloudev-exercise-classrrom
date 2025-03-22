@@ -33,7 +33,6 @@ namespace cloudev_exercise_classrrom.DTO
             {
                 Id = classroom.Id,
                 RoomName = classroom.RoomName,
-                RoomFloor = classroom.RoomFloor,
             };
         }
         public Classroom MapDTOToEntity(ClassroomDTO classroom)
@@ -42,7 +41,6 @@ namespace cloudev_exercise_classrrom.DTO
             {
                 Id = classroom.Id,
                 RoomName = classroom.RoomName,
-                RoomFloor = classroom.RoomFloor,
             };
         }
     }

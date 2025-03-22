@@ -20,7 +20,7 @@ namespace cloudev_exercise_classrrom.Controllers
             _logger = logger;
         }
 
-        [HttpGet("students")]
+        [HttpGet]
         public IActionResult GetAll()
         {
             try
@@ -38,7 +38,7 @@ namespace cloudev_exercise_classrrom.Controllers
             }
         }
 
-        [HttpGet("student/{id}")]
+        [HttpGet("{id}")]
         public IActionResult GetSingle(int id)
         {
             try

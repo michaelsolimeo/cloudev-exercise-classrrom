@@ -6,7 +6,6 @@ namespace cloudev_exercise_classrrom.Entities
     {
         public int Id { get; set; }
         public required string RoomName { get; set; }
-        public string RoomFloor { get; set; }
         public List<Student>? Students { get; set; }
     }
 }
